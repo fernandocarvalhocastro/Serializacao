@@ -1,0 +1,8 @@
+package br.com.fiap.bean;
+
+import java.io.Serializable;
+
+public class Carro implements Serializable{
+	private String placa;
+	private String cor;
+}

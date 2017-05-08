@@ -1,0 +1,14 @@
+package br.com.fiap.view;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Desserializacao {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileInputStream inputStream = new FileInputStream("teste");
+
+	}
+
+}

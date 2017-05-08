@@ -1,0 +1,10 @@
+package br.com.fiap.bean;
+
+import java.io.Serializable;
+
+public class Carro implements Serializable{
+
+	private static final long serialVersionUID = -1972611482162028226L;
+	private String placa;
+	private String cor;
+}

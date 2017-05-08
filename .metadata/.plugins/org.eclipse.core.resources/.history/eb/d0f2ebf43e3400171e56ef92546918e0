@@ -1,0 +1,13 @@
+package br.com.fiap.view;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class Serializacao {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		FileOutputStream fileStream = new FileOutputStream("teste");
+	}
+
+}
