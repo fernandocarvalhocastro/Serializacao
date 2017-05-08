@@ -1,7 +1,6 @@
 package br.com.fiap.rmi;
 
 
-import java.rmi.Naming;
 
 import br.com.fiap.service.CotacaoService;
 
