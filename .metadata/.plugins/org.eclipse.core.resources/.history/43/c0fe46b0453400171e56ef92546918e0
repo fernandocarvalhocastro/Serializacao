@@ -1,0 +1,14 @@
+package br.com.fiap.service.impl;
+
+import java.rmi.RemoteException;
+
+import br.com.fiap.service.CotacaoService;
+
+class CotacaoServiceImpl implements CotacaoService{
+
+	@Override
+	public double converterLibraReal(double libra) throws RemoteException {
+		return libra *4;
+	}
+
+}

@@ -1,0 +1,11 @@
+package br.com.fiap.rmi;
+
+import java.rmi.registry.LocateRegistry;
+
+public class Server {
+
+	public static void main(String[] args) {
+		Registry registry = LocateRegistry.createRegistry(1234);
+	}
+
+}

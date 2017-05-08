@@ -1,0 +1,27 @@
+package br.com.fiap.view;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+import br.com.fiap.bean.Carro;
+
+public class Server {
+
+	public static void main(String[] args) throws Exception {
+		ServerSocket server = new ServerSocket(123);
+		while(true){
+			
+		
+		System.out.println("Aguardando conexão....");
+		Socket socket = server.accept();
+		
+		ObjectInputStream objectStream = new ObjectInputStream(socket.getInputStream());
+		Carro carro = (Carro)objectStream.readObject();
+		
+		System.out.println(carro.getPlaca() + " " + carro.getCor());
+		}
+	}
+
+}
